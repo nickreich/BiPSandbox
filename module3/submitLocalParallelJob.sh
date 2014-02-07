@@ -6,4 +6,4 @@
 #BSUB -q short            # which queue we want to run in
 
 module load R/3.0.1
-R CMD BATCH /home/ngr67a/BiP/permTest_foreach.R
+R CMD BATCH /home/gjm43a/module3/permTest3_mclapply.R

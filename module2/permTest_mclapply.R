@@ -25,7 +25,7 @@ permTest<-function(x){
   #cat(c(lineText, "\n"), file="coefsDistr.csv", append=TRUE)
   output
 }
-out <- mclapply(as.list(c(1:100)),permTest,mc.cores=2)
+out <- mclapply(as.list(c(1:nSim)),permTest,mc.cores=2)
 tic <- Sys.time()
 mat <- do.call(rbind,out)
 toc <- Sys.time()

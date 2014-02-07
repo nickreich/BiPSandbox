@@ -27,7 +27,7 @@ realData_beta1 <- coef(realDataModel)[2]
 
 ## run permutation loop
 tic <- Sys.time()
-mat <- foreach(icount(nSim), .combine=rbind) %dopar% {
+mat <- foreach(i=1:nSim, .combine=rbind) %dopar% {
         permDhts <- sample(heights$Dheight, replace=FALSE)
         mdl <- lm(permDhts ~ heights$Mheight)
         c(i, coef(mdl))

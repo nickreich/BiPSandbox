@@ -5,7 +5,5 @@
 #BSUB -q parallel  # which queue we want to run in
 
 module load R/3.0.1
-R CMD BATCH /home/ngr67a/BiP/distrParallelPermTest.R /home/ngr67a/BiP/file1.Rout
-R CMD BATCH /home/ngr67a/BiP/distrParallelPermTest.R /home/ngr67a/BiP/file2.Rout
-R CMD BATCH /home/ngr67a/BiP/distrParallelPermTest.R /home/ngr67a/BiP/file3.Rout
-R CMD BATCH /home/ngr67a/BiP/distrParallelPermTest.R /home/ngr67a/BiP/file4.Rout
+R CMD BATCH /home/gjm43a/module3/permTest3_mclapply1.R /home/gjm43a/module3/permTest3_mclapply1.Rout
+R CMD BATCH /home/gjm43a/module3/permTest3_mclapply2.R /home/gjm43a/module3/permTest3_mclapply2.Rout

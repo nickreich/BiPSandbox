@@ -3,7 +3,7 @@
 ## Nicholas Reich and Gregory J. Matthews
 
 ##Change to YOUR ACCOUNT NAME!
-height <- read.csv("/home/gjm43a/module3/heights.csv")
+heights <- read.csv("/home/gjm43a/module3/heights.csv")
 
 #require(foreach)
 nSim <- 100 ## number of permutations

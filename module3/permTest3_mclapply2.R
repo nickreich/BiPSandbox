@@ -4,7 +4,7 @@
 
 ##Change to YOUR ACCOUNT NAME!
 setwd("/home/gjm43a/module3")
-height <- read.csv("heights.csv")
+heights <- read.csv("heights.csv")
 
 #require(foreach)
 nSim <- 100 ## number of permutations
